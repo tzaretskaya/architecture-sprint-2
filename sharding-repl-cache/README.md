@@ -84,7 +84,6 @@ docker exec -it mongos_router mongosh --port 27020
 ```
 Получится результат — 492 документа.
 
-У ее реплики shard1-2:
 ```shell
  docker exec -it shard1-2 mongosh --port 27021
  > use somedb;
@@ -93,7 +92,6 @@ docker exec -it mongos_router mongosh --port 27020
 ```
 Получится результат — 492 документа.
 
-У ее реплики shard1-3:
 ```shell
  docker exec -it shard1-3 mongosh --port 27023
  > use somedb;
@@ -111,7 +109,6 @@ docker exec -it shard2-1 mongosh --port 27019
 ```
 Получится результат — 508 документов.
 
-И у реплик:
 ```shell
 docker exec -it shard2-2 mongosh --port 27022
  > use somedb;
