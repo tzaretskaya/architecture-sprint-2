@@ -127,12 +127,6 @@ docker exec -it shard2-3 mongosh --port 27024
 ```
 Получится результат — 508 документов.
 
-### Настройка и проверка Redis:
-```shell
-docker exec -it redis_1 bash
-echo "yes" | redis-cli --cluster create 173.17.0.2:6379 --cluster-replicas 1 
-```
-
 ## Как проверить
 
 ### Если вы запускаете проект на локальной машине
